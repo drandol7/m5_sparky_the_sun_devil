@@ -46,7 +46,7 @@ h3 {
     font-size: 24px;
 }
 
-#gride-container {
+#grid-container {
     display: grid;
     grid-template-columns: 1.5fr 5fr;
 }
@@ -55,15 +55,15 @@ nav {
     background-color:#ffc627
 }
 
-nav > ul {
-    padding: 0;
+nav ul {
+    padding: 0px 0px 0px 0px;
 }
 
-ul > li {
+nav li {
     list-style-type: none;
 }
 
-li > a {
+li a {
     background-color: #bc1d40;
     color: #fff;
     padding: 8px 8px 8px 8px;
@@ -75,9 +75,10 @@ li > a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    display: block-level;
+    display: block;
 }
-nav > a:hover {
+
+nav a:hover {
     background-color: #fff;
     color: #bc1d40;
 }
@@ -87,14 +88,16 @@ main {
     padding: 24px;
 }
 
-main + a {
-    background-color: #8c1d40;
+main a {
+    color: #8c1d40;
     font-weight: bold;
 }
-For the links in the main:
-Add a background color of #8c1d40 and bold font-weight.
-For when the links in the main are being hovered over with a mouse:
-Swap the background and text colors and add padding of 4px to all sides.
+
+main a:hover {
+    padding: 4px 4px 4px 4px;
+    color: #fff;
+    background-color: #8c1d40;
+}
 
 p {
     color: #444;
@@ -105,12 +108,35 @@ q {
     font-style: italic;
 }
 
-::target-text {
+.year {
     background-color: #ffc627;
     color: #555;
     padding: 4px 4px 4px 4px;
     font-size: 20px;
     font-weight: bold;
   }
-For the two years in the last paragraph in the main (wrap these in a span with a class of year and target that class):
-Add a background color of #ffc627, change the color to #555, add padding to all sides of 4px, a font size of 20px and bold weight.
+
+footer h2 {
+    font-size: 24px;
+    margin: 8px 8px 8px 8px;
+}
+
+address {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+    display: inline-block;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    font-weight: normal;
+}
+
+footer a:hover {
+    color: #ffc627;
+}
